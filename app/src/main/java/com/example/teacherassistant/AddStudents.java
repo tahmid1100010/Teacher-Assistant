@@ -20,6 +20,7 @@ public class AddStudents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_students);
+        this.setTitle("STORE STUDENT DATA");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Students");
 

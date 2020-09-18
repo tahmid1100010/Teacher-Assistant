@@ -14,6 +14,7 @@ public class LoadData extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_data);
+        this.setTitle("LOAD STUDENTS DATA");
 
         studentListButton = findViewById(R.id.loadStudentsListButtonId);
         quiz1MarksButton = findViewById(R.id.loadQuiz1MarksButtonId);

@@ -8,20 +8,23 @@ import android.view.View;
 import android.widget.Button;
 
 public class StoreData extends AppCompatActivity implements View.OnClickListener {
-    private Button quiz1Marks,quiz2Marks,quiz3Marks;
+    private Button quiz1Marks,quiz2Marks,quiz3Marks,backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store_data);
+        this.setTitle("STORE QUIZZES MARKS");
 
         quiz1Marks = findViewById(R.id.quiz1MarksButtonId);
         quiz2Marks = findViewById(R.id.quiz2MarksButtonId);
         quiz3Marks = findViewById(R.id.quiz3MarksButtonId);
+        backButton = findViewById(R.id.backButtonId);
 
         quiz1Marks.setOnClickListener(this);
         quiz2Marks.setOnClickListener(this);
         quiz3Marks.setOnClickListener(this);
+        backButton.setOnClickListener(this);
 
     }
 
@@ -39,6 +42,10 @@ public class StoreData extends AppCompatActivity implements View.OnClickListener
             case R.id.quiz3MarksButtonId:
                 Intent intent3 = new Intent(getApplicationContext(),Quiz3Marks.class);
                 startActivity(intent3);
+                break;
+            case R.id.backButtonId:
+                Intent intent4 = new Intent(getApplicationContext(),HomeActivity.class);
+                startActivity(intent4);
                 break;
         }
     }
