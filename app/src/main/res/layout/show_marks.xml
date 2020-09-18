@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="5dp"
+        android:id="@+id/idTextViewId"
+        android:text="Name: Tahmid Jawad An-Noor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/obtainedMarksTextViewId"
+        android:text="Obt. Marks: 18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/totalMarksTextViewId"
+        android:text="Total Marks: 20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

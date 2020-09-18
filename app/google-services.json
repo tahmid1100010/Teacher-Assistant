@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "271884798991",
+    "firebase_url": "https://teacher-assistant-b1bb9.firebaseio.com",
+    "project_id": "teacher-assistant-b1bb9",
+    "storage_bucket": "teacher-assistant-b1bb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271884798991:android:f86bf7b7074c04bec2a77a",
+        "android_client_info": {
+          "package_name": "com.example.teacherassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271884798991-2mllfbirsuti0iek2c0ljm7iqk31d4n5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJrImlLAubovattGicB6qWrq6rfELdzno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271884798991-2mllfbirsuti0iek2c0ljm7iqk31d4n5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

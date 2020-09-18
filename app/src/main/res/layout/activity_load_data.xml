@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoadData">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Academic Data"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/LightSkyBlue"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Students List"
+        android:id="@+id/loadStudentsListButtonId"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Quiz 1 Marks"
+        android:id="@+id/loadQuiz1MarksButtonId"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Quiz 2 Marks"
+        android:id="@+id/loadQuiz2MarksButtonId"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Quiz 3 Marks"
+        android:id="@+id/loadQuiz3MarksButtonId"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Back"
+        android:id="@+id/backButtonId"
+        android:layout_gravity="center"
+        android:background="@color/Crimson"
+        />
+
+</LinearLayout>

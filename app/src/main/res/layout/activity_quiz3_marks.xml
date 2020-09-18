@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/LightSeaGreen"
+    tools:context=".Quiz3Marks">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Quiz 2 Marks"
+        android:textColor="@color/AliceBlue"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/storeQuiz3MarksEditTextId"
+        android:inputType="textPhonetic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter Students ID"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/obtainedQuiz3MarksEditTextId"
+        android:inputType="textPhonetic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Obtained Marks"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalQuiz3MarksEditTextId"
+        android:inputType="textPhonetic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Total Marks"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Save Data"
+        android:id="@+id/saveQuiz3MarksDataButtonId"
+        android:layout_gravity="center"
+        android:textColor="@color/Crimson"
+        android:background="@color/PapayaWhip"
+        />
+
+</LinearLayout>

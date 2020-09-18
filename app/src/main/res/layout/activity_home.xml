@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/PapayaWhip"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Teacher Assistant"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/LightSkyBlue"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Add Students"
+        android:id="@+id/addStudentsButtonId"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Take Attendence"
+        android:id="@+id/takeAttendenceButtonId"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Store Data"
+        android:id="@+id/storeDataButtonId"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Load Data"
+        android:id="@+id/loadDataButtonId"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Log Out"
+        android:id="@+id/logOutButtonId"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+</LinearLayout>

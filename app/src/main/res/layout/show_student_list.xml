@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="5dp"
+        android:id="@+id/nameTextViewId"
+        android:text="Name : Tahmid Jawad An-Noor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/deptTextViewId"
+        android:text="DEPT : CSE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/idTextViewId"
+        android:text="ID : 170204053"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/yearTextViewId"
+        android:text="Year : 2nd "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="5dp"
+        android:id="@+id/semesterTextViewId"
+        android:text="Semester : 2nd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

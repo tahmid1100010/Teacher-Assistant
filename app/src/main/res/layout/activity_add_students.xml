@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/LightSeaGreen"
+    tools:context=".AddStudents">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill Up Student Details"
+        android:textColor="@color/AliceBlue"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFullNameEditTextId"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter Full Name"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addDepartmentEditTextId"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Department"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addIdEditTextId"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter ID"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addYearEditTextId"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter Year"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addSemesterEditTextId"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter Semester"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addMobileNoEditTextId"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter Mobile No"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/PapayaWhip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Save Data"
+        android:id="@+id/saveDataButtonId"
+        android:layout_gravity="center"
+        android:textColor="@color/Crimson"
+        android:background="@color/PapayaWhip"
+        />
+
+</LinearLayout>
