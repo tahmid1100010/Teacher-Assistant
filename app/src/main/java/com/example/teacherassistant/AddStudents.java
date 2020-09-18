@@ -3,6 +3,7 @@ package com.example.teacherassistant;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,8 +14,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class AddStudents extends AppCompatActivity {
-    private Button saveDataButton;
+public class AddStudents extends AppCompatActivity implements View.OnClickListener {
+    private Button saveDataButton,backButton;
     private EditText addFullName,addDepartment,addId,addSemester,addMobileNo,addYear;
     DatabaseReference databaseReference;
 
@@ -27,6 +28,7 @@ public class AddStudents extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("Students");
 
         saveDataButton = findViewById(R.id.saveDataButtonId);
+        backButton = findViewById(R.id.backButtonId);
         addFullName = findViewById(R.id.addFullNameEditTextId);
         addDepartment = findViewById(R.id.addDepartmentEditTextId);
         addId = findViewById(R.id.addIdEditTextId);
@@ -34,23 +36,9 @@ public class AddStudents extends AppCompatActivity {
         addYear = findViewById(R.id.addYearEditTextId);
         addMobileNo = findViewById(R.id.addMobileNoEditTextId);
 
-        saveDataButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                saveData();
-            }
-        });
+        saveDataButton.setOnClickListener(this);
+        backButton.setOnClickListener(this);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId()==android.R.id.home){
-            this.finish();
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     public void saveData(){
@@ -74,5 +62,18 @@ public class AddStudents extends AppCompatActivity {
         addYear.setText("");
         addSemester.setText("");
         addMobileNo.setText("");
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.saveDataButtonId:
+                saveData();
+                break;
+            case R.id.backButtonId:
+                Intent intent2 = new Intent(getApplicationContext(),HomeActivity.class);
+                startActivity(intent2);
+                break;
+        }
     }
 }

@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:text="Back"
+        android:text="Back To Home"
         android:id="@+id/backButtonId"
         android:layout_gravity="center"
         android:background="@color/Crimson"

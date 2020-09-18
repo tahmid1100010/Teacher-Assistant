@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -32,6 +33,16 @@ public class ShowQuiz2Marks extends AppCompatActivity {
         quizMarksAdapter = new QuizMarksAdapter(ShowQuiz2Marks.this,quizMarksList);
 
         listView = findViewById(R.id.listViewId);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home){
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

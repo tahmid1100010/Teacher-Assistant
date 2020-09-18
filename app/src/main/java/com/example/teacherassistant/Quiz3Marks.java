@@ -1,8 +1,10 @@
 package com.example.teacherassistant;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +22,7 @@ public class Quiz3Marks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz3_marks);
+        this.setTitle("STORE QUIZ 3 MARKS");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Quiz3Marks");
 
@@ -34,6 +37,16 @@ public class Quiz3Marks extends AppCompatActivity {
                 saveQuiz3Marks();
             }
         });
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home){
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void saveQuiz3Marks(){
