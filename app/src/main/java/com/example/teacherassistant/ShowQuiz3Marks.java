@@ -26,6 +26,7 @@ public class ShowQuiz3Marks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_quiz3_marks);
+        this.setTitle("QUIZ 3 MARKS");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Quiz3Marks");
 

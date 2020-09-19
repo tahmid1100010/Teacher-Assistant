@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -25,12 +26,23 @@ public class ShowAttendence extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_attendence);
+        this.setTitle("ATTENDENCE LIST");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Attendence");
         attendenceDataList = new ArrayList<>();
         attendenceAdapter = new ShowAttendenceAdapter(ShowAttendence.this,attendenceDataList);
 
         listView = findViewById(R.id.listViewId);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home){
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

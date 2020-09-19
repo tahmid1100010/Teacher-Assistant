@@ -26,6 +26,7 @@ public class ShowStudentsData extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_students_data);
+        this.setTitle("STUDENTS LIST");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Students");
 

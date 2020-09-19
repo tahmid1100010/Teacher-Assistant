@@ -36,6 +36,10 @@ public class ShowAttendenceAdapter extends ArrayAdapter<AttendenceData> {
         TextView t2 = view.findViewById(R.id.dateTextViewId);
         TextView t3 = view.findViewById(R.id.statusTextViewId);
 
+        t1.setText("ID : "+attendenceData.getId());
+        t2.setText("Date : "+attendenceData.getDate());
+        t3.setText("Status: "+attendenceData.getStatus());
+
         return view;
     }
 }
