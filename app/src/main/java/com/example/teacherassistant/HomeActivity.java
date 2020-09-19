@@ -50,11 +50,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent3 = new Intent(getApplicationContext(),LoadData.class);
                 startActivity(intent3);
                 break;
+            case R.id.takeAttendenceButtonId:
+                Intent intent4 = new Intent(getApplicationContext(),Attendence.class);
+                startActivity(intent4);
+                break;
             case R.id.logOutButtonId:
                 FirebaseAuth.getInstance().signOut();
                 finish();
-                Intent intent4 = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent4);
+                Intent intent5 = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent5);
                 Toast.makeText(getApplicationContext(),"Log Out Successful",Toast.LENGTH_LONG).show();
                 break;
         }
