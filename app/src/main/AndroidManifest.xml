@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Attendence"></activity>
+        <activity android:name=".ShowAttendence"></activity>
+        <activity android:name=".Attendence" />
         <activity android:name=".ShowStudentsData" />
         <activity android:name=".ShowQuiz3Marks" />
         <activity android:name=".ShowQuiz2Marks" />

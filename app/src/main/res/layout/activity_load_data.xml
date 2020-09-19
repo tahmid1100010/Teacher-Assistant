@@ -32,6 +32,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Attendence List"
+        android:id="@+id/loadStudentsAttendenceListButtonId"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:text="Quiz 1 Marks"
         android:id="@+id/loadQuiz1MarksButtonId"
         android:layout_gravity="center"

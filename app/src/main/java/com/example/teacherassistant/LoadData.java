@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class LoadData extends AppCompatActivity implements View.OnClickListener {
-    private Button quiz1MarksButton,quiz2MarksButton,quiz3MarksButton,backButton,studentListButton;
+    private Button quiz1MarksButton,quiz2MarksButton,quiz3MarksButton,backButton,studentListButton,attendenceListButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +19,14 @@ public class LoadData extends AppCompatActivity implements View.OnClickListener 
         this.setTitle("LOAD STUDENTS DATA");
 
         studentListButton = findViewById(R.id.loadStudentsListButtonId);
+        attendenceListButton = findViewById(R.id.loadStudentsAttendenceListButtonId);
         quiz1MarksButton = findViewById(R.id.loadQuiz1MarksButtonId);
         quiz2MarksButton = findViewById(R.id.loadQuiz2MarksButtonId);
         quiz3MarksButton = findViewById(R.id.loadQuiz3MarksButtonId);
         backButton = findViewById(R.id.backButtonId);
 
         studentListButton.setOnClickListener(this);
+        attendenceListButton.setOnClickListener(this);
         quiz1MarksButton.setOnClickListener(this);
         quiz2MarksButton.setOnClickListener(this);
         quiz3MarksButton.setOnClickListener(this);
@@ -50,10 +52,13 @@ public class LoadData extends AppCompatActivity implements View.OnClickListener 
                 Intent intent4 = new Intent(getApplicationContext(),ShowStudentsData.class);
                 startActivity(intent4);
                 break;
-
-            case R.id.backButtonId:
-                Intent intent5 = new Intent(getApplicationContext(),HomeActivity.class);
+            case R.id.loadStudentsAttendenceListButtonId:
+                Intent intent5 = new Intent(getApplicationContext(),ShowAttendence.class);
                 startActivity(intent5);
+                break;
+            case R.id.backButtonId:
+                Intent intent6 = new Intent(getApplicationContext(),HomeActivity.class);
+                startActivity(intent6);
                 break;
 
         }
